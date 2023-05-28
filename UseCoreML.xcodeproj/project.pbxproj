@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90667432A02A01E00F9C0FE /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A90667422A02A01E00F9C0FE /* MarsHabitatPricer.mlmodel */; };
 		A91814852A0220F0009C3673 /* UseCoreMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91814842A0220F0009C3673 /* UseCoreMLApp.swift */; };
 		A91814872A0220F0009C3673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91814862A0220F0009C3673 /* ContentView.swift */; };
 		A91814892A0220F1009C3673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91814882A0220F1009C3673 /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 		A918149B2A0220F1009C3673 /* UseCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918149A2A0220F1009C3673 /* UseCoreMLTests.swift */; };
 		A91814A52A0220F1009C3673 /* UseCoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91814A42A0220F1009C3673 /* UseCoreMLUITests.swift */; };
 		A91814A72A0220F1009C3673 /* UseCoreMLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91814A62A0220F1009C3673 /* UseCoreMLUITestsLaunchTests.swift */; };
+		A9ABE3DE2A14612B00A09A2D /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9ABE3DD2A14612B00A09A2D /* YOLOv3.mlmodel */; };
+		A9ABE3E02A20411C00A09A2D /* Networktest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ABE3DF2A20411C00A09A2D /* Networktest.swift */; };
+		A9ABE3E32A20426B00A09A2D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9ABE3E22A20426B00A09A2D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90667422A02A01E00F9C0FE /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
 		A91814812A0220F0009C3673 /* UseCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91814842A0220F0009C3673 /* UseCoreMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCoreMLApp.swift; sourceTree = "<group>"; };
 		A91814862A0220F0009C3673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +53,8 @@
 		A91814A02A0220F1009C3673 /* UseCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91814A42A0220F1009C3673 /* UseCoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCoreMLUITests.swift; sourceTree = "<group>"; };
 		A91814A62A0220F1009C3673 /* UseCoreMLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCoreMLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9ABE3DD2A14612B00A09A2D /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
+		A9ABE3DF2A20411C00A09A2D /* Networktest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networktest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9ABE3E32A20426B00A09A2D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +106,15 @@
 		A91814832A0220F0009C3673 /* UseCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				A9ABE3DD2A14612B00A09A2D /* YOLOv3.mlmodel */,
+				A90667422A02A01E00F9C0FE /* MarsHabitatPricer.mlmodel */,
 				A91814842A0220F0009C3673 /* UseCoreMLApp.swift */,
 				A91814862A0220F0009C3673 /* ContentView.swift */,
 				A91814882A0220F1009C3673 /* Assets.xcassets */,
 				A918148D2A0220F1009C3673 /* Persistence.swift */,
 				A918148F2A0220F1009C3673 /* UseCoreML.xcdatamodeld */,
 				A918148A2A0220F1009C3673 /* Preview Content */,
+				A9ABE3DF2A20411C00A09A2D /* Networktest.swift */,
 			);
 			path = UseCoreML;
 			sourceTree = "<group>";
@@ -149,6 +160,9 @@
 			dependencies = (
 			);
 			name = UseCoreML;
+			packageProductDependencies = (
+				A9ABE3E22A20426B00A09A2D /* Alamofire */,
+			);
 			productName = UseCoreML;
 			productReference = A91814812A0220F0009C3673 /* UseCoreML.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +235,9 @@
 				Base,
 			);
 			mainGroup = A91814782A0220F0009C3673;
+			packageReferences = (
+				A9ABE3E12A20426B00A09A2D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A91814822A0220F0009C3673 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,9 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9ABE3DE2A14612B00A09A2D /* YOLOv3.mlmodel in Sources */,
 				A918148E2A0220F1009C3673 /* Persistence.swift in Sources */,
+				A90667432A02A01E00F9C0FE /* MarsHabitatPricer.mlmodel in Sources */,
 				A91814912A0220F1009C3673 /* UseCoreML.xcdatamodeld in Sources */,
 				A91814872A0220F0009C3673 /* ContentView.swift in Sources */,
+				A9ABE3E02A20411C00A09A2D /* Networktest.swift in Sources */,
 				A91814852A0220F0009C3673 /* UseCoreMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UseCoreML/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KH7FAV7M7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -432,6 +453,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UseCoreML/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KH7FAV7M7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -460,6 +483,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9ABE3E12A20426B00A09A2D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9ABE3E22A20426B00A09A2D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9ABE3E12A20426B00A09A2D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A918148F2A0220F1009C3673 /* UseCoreML.xcdatamodeld */ = {
